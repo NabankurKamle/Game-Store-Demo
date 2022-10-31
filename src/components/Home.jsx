@@ -3,7 +3,10 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#2A0D18] to-[#0c0505] via-[#4D1B26] py-16 px-2">
+    <div
+      id="home"
+      className="flex flex-col items-center justify-center bg-gradient-to-b from-[#2A0D18] to-[#0c0505] via-[#4D1B26] py-16 px-2"
+    >
       <div className="flex flex-col items-center justify-center mb-5">
         <img src="/img/spiderMan.png" alt="" />
       </div>

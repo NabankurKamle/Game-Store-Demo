@@ -3,7 +3,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Games = () => {
   return (
-    <div className="bg-gradient-to-b from-[#000000] to-[#000000] via-[#130609] py-10 px-4">
+    <div
+      id="games"
+      className="bg-gradient-to-b from-[#000000] to-[#000000] via-[#130609] py-10 px-4"
+    >
       <div className="text-center text-white">
         <h1 className="text-3xl mb-2">Popular Games</h1>
         <button className="w-full flex items-center justify-center mb-10 text-transparent bg-clip-text bg-gradient-to-r  from-[#FF17AF] to-[#FFA218] hover:text-white font-GothamBold text-lg">
@@ -51,7 +54,7 @@ const Games = () => {
               </button>
             </div>
           </div>
-          <div className="h-[35vh] bg-gradient-to-tr from-[#3A2627] to-[#3A2627] via-[#4B2D2F] w-full rounded-3xl text-white px-4 py-8 mt-10 items-start relative">
+          <div className="h-[35vh] mb-10 bg-gradient-to-tr from-[#3A2627] to-[#3A2627] via-[#4B2D2F] w-full rounded-3xl text-white px-4 py-8 mt-10 items-start relative">
             <div className="absolute -bottom-[0.45rem] right-0">
               <img src="/img/instantGames/cod.png" alt="" />
             </div>

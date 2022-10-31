@@ -10,6 +10,10 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="flex items-center justify-between bg-transeparent text-white px-5 py-5 absolute top-0 left-0 w-[100vw]">
       <div className="flex items-center justify-center space-x-3">
@@ -17,22 +21,52 @@ const Navbar = () => {
         <span className="text-4xl">playo</span>
       </div>
       {showMenu && (
-        <div className="absolute bg-black py-4 top-[6.5rem] w-[100vw] left-0 pl-5">
-          <ul className="flex flex-col">
+        <div className="absolute bg-transparent backdrop-blur-md py-4 top-[6.5rem] w-[100vw] left-0 pl-5">
+          <ul className="flex flex-col gap-y-5">
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                onClick={closeMenu}
+                className="hover:text-[#FF14BA] hover:border-b-2 hover:border-[#FF14BA] pb-2"
+                to="/"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/pages">Pages</Link>
+              <Link
+                onClick={closeMenu}
+                className="hover:text-[#FF14BA] hover:border-b-2 hover:border-[#FF14BA] pb-2"
+                to="/pages"
+              >
+                Pages
+              </Link>
             </li>
             <li>
-              <Link to="/store">Store</Link>
+              <Link
+                onClick={closeMenu}
+                className="hover:text-[#FF14BA] hover:border-b-2 hover:border-[#FF14BA] pb-2"
+                to="/store"
+              >
+                Store
+              </Link>
             </li>
             <li>
-              <Link to="/news">News</Link>
+              <Link
+                onClick={closeMenu}
+                className="hover:text-[#FF14BA] hover:border-b-2 hover:border-[#FF14BA] pb-2"
+                to="/news"
+              >
+                News
+              </Link>
             </li>
             <li>
-              <Link to="/contactUs">Contact Us</Link>
+              <Link
+                onClick={closeMenu}
+                className="hover:text-[#FF14BA] hover:border-b-2 hover:border-[#FF14BA] pb-2"
+                to="/contactUs"
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

@@ -11,7 +11,7 @@ const Community = () => {
   };
 
   return (
-    <div className=" bg-black px-4">
+    <div id="community" className=" bg-black px-4">
       <div className="h-full w-full bg-[#1B1B1B] rounded-xl">
         <div className="flex items-center justify-center">
           {communities.map((community) => (

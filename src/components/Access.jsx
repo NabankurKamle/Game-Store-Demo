@@ -23,7 +23,7 @@ const Access = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-30}
               duration={500}
               className=""
               to="community"
@@ -47,7 +47,7 @@ const Access = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
               className=""
               to="games"

@@ -4,7 +4,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => {
   return (
-    <div className=" bg-gradient-to-b from-[#000000] to-[#000000] via-[#4D1B26] py-16 px-[2.3rem]">
+    <div
+      id="features"
+      className=" bg-gradient-to-b from-[#000000] to-[#000000] via-[#4D1B26] py-16 px-[2.3rem]"
+    >
       <div className="text-center text-white">
         <h1 className="text-3xl mb-5">Features</h1>
         <p>
